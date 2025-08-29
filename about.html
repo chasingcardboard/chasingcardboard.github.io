@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chasing Cardboard</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #3b4cca;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fullscreen iframe */
+    iframe {
+      position: absolute;
+      top: 60px; /* height of navbar */
+      left: 0;
+      width: 100%;
+      height: calc(100% - 60px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index">Chasing Cardboard</a>
+    <nav>
+      <a href="about">About</a>
+      <a href="submit" style="padding-right: 4rem;">Submit Store</a>
+    </nav>
+  </header>
+<main>
+<h1>About Chasing Cardboard</h1>
+<p>Hey all,</p>
+<p>I’ve put together a map of shops around the UK that sell Pokémon cards. It covers everything from local game stores and hobby shops to the bigger retailers.</p>
+<p>I know there are other versions of this kind of map floating around, but I wanted to make one that will always be free and kept up to date by the community. Everything you need is accessible right here on this site, including the interactive map and the store submission system.</p>
+<p>If you know of a shop that isn’t listed yet, you can submit it directly through the site. This way, collectors and players can find new places to pick up packs, singles, or accessories — and maybe even discover some local game shops they didn’t know about.</p>
+<p>Thanks for any contributions, and happy hunting! 🙌</p>
+<h2 id="submit">Submit a New Store</h2>
+<p>Use the submission form embedded on the main site to add a new shop to the map. Your input helps keep the map accurate and up to date for the whole community.</p>
+</main>
+ 
+</body>
+</html>
