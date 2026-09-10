@@ -3,75 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chasing Cardboard</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
+  <title>Chasing Cardboard — UK Pokémon card shop map</title>
+  <meta name="description" content="A free, community-maintained map of shops across the UK selling Pokémon cards — local game stores, hobby shops and big retailers.">
 
-    /* Navbar */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #3b4cca;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    header .logo {
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 600;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
+  <meta property="og:title" content="Chasing Cardboard">
+  <meta property="og:description" content="A free, community-maintained map of UK shops selling Pokémon cards.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3b4cca">
 
-    /* Fullscreen iframe */
-    iframe {
-      position: absolute;
-      top: 60px; /* height of navbar */
-      left: 0;
-      width: 100%;
-      height: calc(100% - 60px);
-      border: none;
-    }
-  </style>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a class="logo" href="index">Chasing Cardboard</a>
-    <nav>
-      <a href="about">About</a>
-      <a href="submit" style="padding-right: 4rem;">Submit Store</a>
+  <a class="skip-link" href="#map">Skip to the map</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g transform="rotate(-10 32 34)">
+          <rect x="16" y="12" width="32" height="44" rx="6" fill="#fff"/>
+          <rect x="21" y="17" width="22" height="17" rx="3" fill="#ffcb05"/>
+          <rect x="21" y="39" width="22" height="3.5" rx="1.75" fill="#c9cce4"/>
+          <rect x="21" y="46" width="14" height="3.5" rx="1.75" fill="#c9cce4"/>
+        </g>
+        <path d="M53 6l2 5.2L60 13l-5.2 2L53 20l-2-5L46 13l5-1.4z" fill="#ffcb05"/>
+      </svg>
+      Chasing Cardboard
+    </a>
+    <nav class="site-nav">
+      <a class="nav-map" href="index.html" aria-current="page">Map</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="submit.html">Submit<span class="hide-sm"> a store</span></a>
     </nav>
   </header>
 
-  <iframe 
-    src="https://www.google.com/maps/d/u/0/embed?mid=1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU&ehbc=2E312F&noprof=1" 
-    title="Community trading card shop map" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-  <!-- 100% privacy-first analytics -->
-<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <main class="map-stage" id="map">
+    <iframe
+      src="https://www.google.com/maps/d/u/0/embed?mid=1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU&ehbc=2E312F&noprof=1"
+      title="Community map of UK trading card shops"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
 
+  <aside class="map-intro" id="intro" hidden>
+    <button class="map-intro-close" id="introClose" type="button" aria-label="Dismiss">&times;</button>
+    <h2>Find Pokémon cards near you</h2>
+    <p>A free, community-run map of UK shops stocking Pokémon cards — from local game stores to the big chains. Zoom in, or search your town in the map's own search box.</p>
+    <a class="btn btn-gold" href="submit.html">Know a shop? Add it &rarr;</a>
+  </aside>
+
+  <script>
+    (function () {
+      var intro = document.getElementById('intro');
+      var close = document.getElementById('introClose');
+      var KEY = 'cc-intro-dismissed';
+      var dismissed = false;
+      try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
+      if (!dismissed) intro.hidden = false;
+      close.addEventListener('click', function () {
+        intro.hidden = true;
+        try { localStorage.setItem(KEY, '1'); } catch (e) {}
+      });
+    })();
+  </script>
+
+  <!-- 100% privacy-first analytics -->
+  <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 </html>

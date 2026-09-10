@@ -3,78 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chasing Cardboard</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
+  <title>About — Chasing Cardboard</title>
+  <meta name="description" content="Why Chasing Cardboard exists: a free, community-maintained map of UK shops selling Pokémon cards, kept up to date by collectors and players.">
 
-    /* Navbar */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #3b4cca;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    header .logo {
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 600;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
+  <meta property="og:title" content="About — Chasing Cardboard">
+  <meta property="og:description" content="A free, community-maintained map of UK shops selling Pokémon cards.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3b4cca">
 
-    /* Fullscreen iframe */
-    iframe {
-      position: absolute;
-      top: 60px; /* height of navbar */
-      left: 0;
-      width: 100%;
-      height: calc(100% - 60px);
-      border: none;
-    }
-  </style>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <a class="logo" href="index">Chasing Cardboard</a>
-    <nav>
-      <a href="about">About</a>
-      <a href="submit" style="padding-right: 4rem;">Submit Store</a>
+<body class="has-page-bg">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g transform="rotate(-10 32 34)">
+          <rect x="16" y="12" width="32" height="44" rx="6" fill="#fff"/>
+          <rect x="21" y="17" width="22" height="17" rx="3" fill="#ffcb05"/>
+          <rect x="21" y="39" width="22" height="3.5" rx="1.75" fill="#c9cce4"/>
+          <rect x="21" y="46" width="14" height="3.5" rx="1.75" fill="#c9cce4"/>
+        </g>
+        <path d="M53 6l2 5.2L60 13l-5.2 2L53 20l-2-5L46 13l5-1.4z" fill="#ffcb05"/>
+      </svg>
+      Chasing Cardboard
+    </a>
+    <nav class="site-nav">
+      <a class="nav-map" href="index.html">Map</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a class="nav-cta" href="submit.html">Submit<span class="hide-sm"> a store</span></a>
     </nav>
   </header>
 
-<h1 style="
-    margin-top: 5rem;">About Chasing Cardboard</h1>
-<p>Hey all,</p>
-<p>I’ve put together a map of shops around the UK that sell Pokémon cards. It covers everything from local game stores and hobby shops to the bigger retailers.</p>
-<p>I know there are other versions of this kind of map floating around, but I wanted to make one that will always be free and kept up to date by the community. Everything you need is accessible right here on this site, including the interactive map and the store submission system.</p>
-<p>If you know of a shop that isn’t listed yet, you can submit it directly through the site. This way, collectors and players can find new places to pick up packs, singles, or accessories — and maybe even discover some local game shops they didn’t know about.</p>
-<p>Thanks for any contributions, and happy hunting! 🙌</p>
-<h2 id="submit">Submit a New Store</h2>
-<p>Use the submission form embedded on the main site to add a new shop to the map. Your input helps keep the map accurate and up to date for the whole community.</p>
-</main>
-   <!-- 100% privacy-first analytics -->
-<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script> 
+  <main class="page" id="main">
+    <span class="eyebrow">About the project</span>
+    <h1>A map of every UK shop selling Pokémon cards</h1>
+    <p class="lede">Free to use, free of ads, and kept current by the people who actually visit these shops.</p>
+
+    <ul class="features">
+      <li class="feature">
+        <div class="feature-icon" aria-hidden="true">🗺️</div>
+        <h3>UK-wide coverage</h3>
+        <p>Local game stores, hobby shops and the bigger retailers, all on one map.</p>
+      </li>
+      <li class="feature">
+        <div class="feature-icon" aria-hidden="true">🆓</div>
+        <h3>Always free</h3>
+        <p>No paywall, no accounts, no ads. Privacy-first analytics and nothing else.</p>
+      </li>
+      <li class="feature">
+        <div class="feature-icon" aria-hidden="true">🤝</div>
+        <h3>Community-run</h3>
+        <p>Anyone can submit a shop, so the map improves every time someone finds one.</p>
+      </li>
+    </ul>
+
+    <div class="card card-holo prose">
+      <p>Hey all,</p>
+      <p>I've put together a map of shops around the UK that sell Pokémon cards. It covers everything from local game stores and hobby shops to the bigger retailers.</p>
+      <p>I know there are other versions of this kind of map floating around, but I wanted to make one that will <strong>always be free</strong> and kept up to date by the community. Everything you need is right here on this site — the interactive map and the store submission system.</p>
+      <p>If you know of a shop that isn't listed yet, you can submit it directly through the site. This way, collectors and players can find new places to pick up packs, singles, or accessories — and maybe even discover some local game shops they didn't know about.</p>
+      <p style="margin-bottom:0">Thanks for any contributions, and happy hunting! 🙌</p>
+    </div>
+
+    <div class="callout" id="submit">
+      <div>
+        <h2>Spotted a shop that's missing?</h2>
+        <p>It takes about a minute, and it helps every collector who comes here after you.</p>
+      </div>
+      <a class="btn btn-gold" href="submit.html">Submit a store</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="about.html">About</a>
+      <a href="submit.html">Submit a store</a>
+    </nav>
+    <p style="margin:0">Chasing Cardboard — a community project. Not affiliated with Nintendo, Creatures Inc., GAME FREAK inc. or The Pokémon Company.</p>
+  </footer>
+
+  <!-- 100% privacy-first analytics -->
+  <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 </html>

@@ -3,69 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chasing Cardboard</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
+  <title>Submit a store — Chasing Cardboard</title>
+  <meta name="description" content="Add a UK shop that sells Pokémon cards to the Chasing Cardboard community map.">
 
-    /* Navbar */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #3b4cca;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    header .logo {
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 600;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
+  <meta property="og:title" content="Submit a store — Chasing Cardboard">
+  <meta property="og:description" content="Add a UK shop that sells Pokémon cards to the community map.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3b4cca">
 
-    /* Fullscreen iframe */
-    iframe {
-      position: absolute;
-      top: 60px; /* height of navbar */
-      left: 0;
-      width: 100%;
-      height: calc(100% - 60px);
-      border: none;
-    }
-  </style>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <a class="logo" href="index">Chasing Cardboard</a>
-    <nav>
-      <a href="about">About</a>
-      <a href="submit" style="padding-right: 4rem;">Submit Store</a>
+<body class="has-page-bg">
+  <a class="skip-link" href="#main">Skip to the form</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g transform="rotate(-10 32 34)">
+          <rect x="16" y="12" width="32" height="44" rx="6" fill="#fff"/>
+          <rect x="21" y="17" width="22" height="17" rx="3" fill="#ffcb05"/>
+          <rect x="21" y="39" width="22" height="3.5" rx="1.75" fill="#c9cce4"/>
+          <rect x="21" y="46" width="14" height="3.5" rx="1.75" fill="#c9cce4"/>
+        </g>
+        <path d="M53 6l2 5.2L60 13l-5.2 2L53 20l-2-5L46 13l5-1.4z" fill="#ffcb05"/>
+      </svg>
+      Chasing Cardboard
+    </a>
+    <nav class="site-nav">
+      <a class="nav-map" href="index.html">Map</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="submit.html" aria-current="page">Submit<span class="hide-sm"> a store</span></a>
     </nav>
   </header>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedPEOdfThhw_nLRUBGCSSk42CPo7I-7nYjNnvnbSBi5FZhmA/viewform?embedded=true" width="640" height="1537" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    <!-- 100% privacy-first analytics -->
-<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <main class="page page-wide" id="main">
+    <span class="eyebrow">Add to the map</span>
+    <h1>Submit a store</h1>
+    <p class="lede">Know a shop selling Pokémon cards that isn't on the map yet? Add it below — the name and a rough location is enough to get started.</p>
+
+    <div class="form-frame">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSedPEOdfThhw_nLRUBGCSSk42CPo7I-7nYjNnvnbSBi5FZhmA/viewform?embedded=true"
+        title="Store submission form"
+        loading="lazy">Loading…</iframe>
+    </div>
+
+    <p style="margin-top:1.25rem;font-size:.92rem;color:var(--ink-faint)">
+      Submissions are reviewed before they go live, so it may take a little while to appear on the map.
+      Trouble with the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSedPEOdfThhw_nLRUBGCSSk42CPo7I-7nYjNnvnbSBi5FZhmA/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="about.html">About</a>
+      <a href="submit.html">Submit a store</a>
+    </nav>
+    <p style="margin:0">Chasing Cardboard — a community project. Not affiliated with Nintendo, Creatures Inc., GAME FREAK inc. or The Pokémon Company.</p>
+  </footer>
+
+  <!-- 100% privacy-first analytics -->
+  <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 </html>
