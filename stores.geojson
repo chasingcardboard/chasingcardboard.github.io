@@ -3,7 +3,7 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-11T20:58:31+00:00",
+  "generated": "2026-09-11T20:59:45+00:00",
   "count": 286,
   "categories": [
    {
@@ -12,11 +12,11 @@
    },
    {
     "slug": "chain",
-    "count": 63
+    "count": 64
    },
    {
     "slug": "occasional",
-    "count": 12
+    "count": 11
    }
   ]
  },
@@ -3407,8 +3407,8 @@
    },
    "properties": {
     "name": "TGJones",
-    "category": "occasional",
-    "layer": "Occasional Stockists"
+    "category": "chain",
+    "layer": "Retail Chains"
    }
   },
   {
