@@ -3,16 +3,16 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-11T20:58:04+00:00",
+  "generated": "2026-09-11T20:58:21+00:00",
   "count": 286,
   "categories": [
    {
     "slug": "independent",
-    "count": 213
+    "count": 212
    },
    {
     "slug": "chain",
-    "count": 61
+    "count": 62
    },
    {
     "slug": "occasional",
@@ -1082,8 +1082,8 @@
    },
    "properties": {
     "name": "Forbidden Planet Brighton",
-    "category": "independent",
-    "layer": "Independent Stores"
+    "category": "chain",
+    "layer": "Retail Chains"
    }
   },
   {
