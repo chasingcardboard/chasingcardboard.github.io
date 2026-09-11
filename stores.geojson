@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-10T19:54:53.502Z",
-  "count": 286,
+  "generated": "2026-09-11T20:48:53+00:00",
+  "count": 287,
   "categories": [
    {
     "slug": "independent",
-    "count": 214
+    "count": 215
    },
    {
     "slug": "chain",
@@ -2246,21 +2246,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.934243,
-     52.759123
-    ]
-   },
-   "properties": {
-    "name": "PokéHub",
-    "category": "independent",
-    "layer": "Independent Stores"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -1.780323,
      53.648137
     ]
@@ -2327,6 +2312,21 @@
    },
    "properties": {
     "name": "PokiLee's PokiWorld",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.934243,
+     52.759123
+    ]
+   },
+   "properties": {
+    "name": "PokéHub",
     "category": "independent",
     "layer": "Independent Stores"
    }
@@ -3394,6 +3394,23 @@
     "name": "Stylecreep",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.684172,
+     53.451733
+    ]
+   },
+   "properties": {
+    "name": "test",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "notes": "nada",
+    "url": "https://chasingcardboard.github.io"
    }
   },
   {
