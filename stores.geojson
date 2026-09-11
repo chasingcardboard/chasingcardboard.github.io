@@ -3,16 +3,16 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-11T20:52:37+00:00",
+  "generated": "2026-09-11T20:58:04+00:00",
   "count": 286,
   "categories": [
    {
     "slug": "independent",
-    "count": 214
+    "count": 213
    },
    {
     "slug": "chain",
-    "count": 60
+    "count": 61
    },
    {
     "slug": "occasional",
@@ -1067,8 +1067,8 @@
    },
    "properties": {
     "name": "Forbidden Planet",
-    "category": "independent",
-    "layer": "Independent Stores"
+    "category": "chain",
+    "layer": "Retail Chains"
    }
   },
   {
