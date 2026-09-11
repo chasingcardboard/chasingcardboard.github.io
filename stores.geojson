@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-11T20:51:46+00:00",
-  "count": 287,
+  "generated": "2026-09-11T20:52:37+00:00",
+  "count": 286,
   "categories": [
    {
     "slug": "independent",
-    "count": 215
+    "count": 214
    },
    {
     "slug": "chain",
@@ -3394,23 +3394,6 @@
     "name": "Stylecreep",
     "category": "independent",
     "layer": "Independent Stores"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -2.684172,
-     53.451733
-    ]
-   },
-   "properties": {
-    "name": "testing123",
-    "category": "independent",
-    "layer": "Independent Stores",
-    "notes": "final",
-    "url": "https://chasingcardboard.github.io"
    }
   },
   {
