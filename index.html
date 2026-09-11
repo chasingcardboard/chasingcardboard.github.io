@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chasing Cardboard — UK Pokémon card shop map</title>
-  <meta name="description" content="A free, community-maintained map of shops across the UK selling Pokémon cards — local game stores, hobby shops and big retailers.">
+  <meta name="description" content="A free, community-maintained map of shops across the UK selling Pokémon cards — local game stores, hobby shops and big retailers. Search by town, filter by type, find what's near you.">
 
   <meta property="og:title" content="Chasing Cardboard">
   <meta property="og:description" content="A free, community-maintained map of UK shops selling Pokémon cards.">
@@ -14,8 +14,14 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css?v=20260911d">
 </head>
 <body>
   <a class="skip-link" href="#map">Skip to the map</a>
@@ -40,35 +46,106 @@
     </nav>
   </header>
 
-  <main class="map-stage" id="map">
-    <iframe
-      src="https://www.google.com/maps/d/u/0/embed?mid=1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU&ehbc=2E312F&noprof=1"
-      title="Community map of UK trading card shops"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <main class="map-shell">
+
+    <!-- ---------- Sidebar / mobile sheet ---------- -->
+    <aside class="panel" id="panel" aria-label="Shop search and results">
+
+      <div class="panel-head">
+        <button class="sheet-close" id="sheetClose" type="button" aria-label="Close list">&times;</button>
+
+        <div class="search-row">
+          <label class="visually-hidden" for="search">Search shops, towns or postcodes</label>
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          </span>
+          <input id="search" type="search" autocomplete="off"
+                 placeholder="Shop, town or postcode…"
+                 aria-describedby="searchStatus">
+          <button class="search-go" id="geoSearchBtn" type="button" title="Search for this place">Go</button>
+        </div>
+
+        <div class="panel-actions">
+          <button class="chip chip-action" id="nearMe" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            Near me
+          </button>
+          <button class="chip chip-clear" id="clearOrigin" type="button" hidden>
+            Near <strong id="originLabel">you</strong> &times;
+          </button>
+        </div>
+
+        <p class="search-status" id="searchStatus" role="status" aria-live="polite"></p>
+        <p class="geo-hint" id="geoHint" hidden>No shop by that name — press <kbd>Enter</kbd> to search for it as a place instead.</p>
+
+        <fieldset class="filters">
+          <legend class="visually-hidden">Filter by store type</legend>
+          <label class="filter" data-cat="independent">
+            <input type="checkbox" id="cat-independent" checked>
+            <span class="filter-dot"></span>
+            <span class="filter-label">Independent stores</span>
+            <span class="filter-count" id="count-independent">–</span>
+          </label>
+          <label class="filter" data-cat="occasional">
+            <input type="checkbox" id="cat-occasional" checked>
+            <span class="filter-dot"></span>
+            <span class="filter-label">Occasional stockists</span>
+            <span class="filter-count" id="count-occasional">–</span>
+          </label>
+          <label class="filter" data-cat="chain">
+            <input type="checkbox" id="cat-chain" checked>
+            <span class="filter-dot"></span>
+            <span class="filter-label">Retail chains</span>
+            <span class="filter-count" id="count-chain">–</span>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="list-head">
+        <h2 id="listCount">Loading…</h2>
+        <span id="listScope">in this area</span>
+      </div>
+
+      <ul class="shop-list" id="shopList"></ul>
+
+      <div class="panel-foot">
+        <a class="btn btn-gold btn-block" href="submit.html">Add a missing shop</a>
+        <p id="dataMeta"></p>
+      </div>
+    </aside>
+
+    <!-- ---------- Map ---------- -->
+    <div class="map-holder">
+      <div id="map" role="application" aria-label="Map of UK shops selling Pokémon cards"></div>
+
+      <div class="map-loading" id="mapLoading">
+        <div class="cc-loading-inner">
+          <span class="spinner" aria-hidden="true"></span>
+          <p>Loading shops…</p>
+        </div>
+      </div>
+
+      <button class="sheet-toggle" id="sheetToggle" type="button" aria-expanded="false" aria-controls="panel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        Browse list
+      </button>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="true">
+        <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/>
+          <path d="M9 4v13.5M15 6.5V20"/>
+        </svg>
+        <span class="theme-label">Pixel view</span>
+      </button>
+
+    </div>
   </main>
 
-  <aside class="map-intro" id="intro" hidden>
-    <button class="map-intro-close" id="introClose" type="button" aria-label="Dismiss">&times;</button>
-    <h2>Find Pokémon cards near you</h2>
-    <p>A free, community-run map of UK shops stocking Pokémon cards — from local game stores to the big chains. Zoom in, or search your town in the map's own search box.</p>
-    <a class="btn btn-gold" href="submit.html">Know a shop? Add it &rarr;</a>
-  </aside>
-
-  <script>
-    (function () {
-      var intro = document.getElementById('intro');
-      var close = document.getElementById('introClose');
-      var KEY = 'cc-intro-dismissed';
-      var dismissed = false;
-      try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
-      if (!dismissed) intro.hidden = false;
-      close.addEventListener('click', function () {
-        intro.hidden = true;
-        try { localStorage.setItem(KEY, '1'); } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="map.js?v=20260911d"></script>
 
   <!-- 100% privacy-first analytics -->
   <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

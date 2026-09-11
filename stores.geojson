@@ -1,0 +1,4315 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "source": "Google My Maps",
+  "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
+  "generated": "2026-09-10T19:54:53.502Z",
+  "count": 286,
+  "categories": [
+   {
+    "slug": "independent",
+    "count": 214
+   },
+   {
+    "slug": "chain",
+    "count": 60
+   },
+   {
+    "slug": "occasional",
+    "count": 12
+   }
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.102681,
+     57.145234
+    ]
+   },
+   "properties": {
+    "name": "177 Union St",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.446483,
+     51.713508
+    ]
+   },
+   "properties": {
+    "name": "Aberdare Trading Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.902857,
+     51.889345
+    ]
+   },
+   "properties": {
+    "name": "ACE Gaming Centre",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.693236,
+     53.758342
+    ]
+   },
+   "properties": {
+    "name": "AJ-TCG Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.775417,
+     54.245049
+    ]
+   },
+   "properties": {
+    "name": "Aladdins Cave Gifts & Gaming Shop Pickering",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.010287,
+     52.217427
+    ]
+   },
+   "properties": {
+    "name": "Albion Cards and Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.145933,
+     53.414152
+    ]
+   },
+   "properties": {
+    "name": "All Rolled Up",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.337515,
+     51.604868
+    ]
+   },
+   "properties": {
+    "name": "AND Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.700326,
+     51.671378
+    ]
+   },
+   "properties": {
+    "name": "Arcana",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.336868,
+     53.746261
+    ]
+   },
+   "properties": {
+    "name": "Archeron Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.717234,
+     52.056836
+    ]
+   },
+   "properties": {
+    "name": "AREA 1-51 (TCG)",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.589564,
+     51.479524
+    ]
+   },
+   "properties": {
+    "name": "Area 51",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.751582,
+     51.581003
+    ]
+   },
+   "properties": {
+    "name": "Atomic Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.026218,
+     51.479035
+    ]
+   },
+   "properties": {
+    "name": "Badger Badger Deptford",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.021924,
+     51.652309
+    ]
+   },
+   "properties": {
+    "name": "Badzgaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.638177,
+     50.831655
+    ]
+   },
+   "properties": {
+    "name": "Barnham Trading Post",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.374512,
+     51.38131
+    ]
+   },
+   "properties": {
+    "name": "Bath TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.931572,
+     53.177136
+    ]
+   },
+   "properties": {
+    "name": "Battle Games & Models",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.999122,
+     50.782211
+    ]
+   },
+   "properties": {
+    "name": "Beacon Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.481278,
+     53.551919
+    ]
+   },
+   "properties": {
+    "name": "Beck's Collects",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.560585,
+     54.525204
+    ]
+   },
+   "properties": {
+    "name": "Big Man Cards Ltd.",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.613027,
+     54.968465
+    ]
+   },
+   "properties": {
+    "name": "Binderful",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.33869,
+     52.332283
+    ]
+   },
+   "properties": {
+    "name": "Binderly",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.398836,
+     50.913541
+    ]
+   },
+   "properties": {
+    "name": "Board in the City CiC",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.453283,
+     50.614612
+    ]
+   },
+   "properties": {
+    "name": "Boss Miniatures & Gaming Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.605213,
+     55.975989
+    ]
+   },
+   "properties": {
+    "name": "Bright Star Toys",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.33331,
+     51.503821
+    ]
+   },
+   "properties": {
+    "name": "British food and wine store",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.997285,
+     51.588845
+    ]
+   },
+   "properties": {
+    "name": "Brown Bear Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.120517,
+     52.206664
+    ]
+   },
+   "properties": {
+    "name": "Bubble Pop-Cambridge",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.205096,
+     51.516386
+    ]
+   },
+   "properties": {
+    "name": "Bubble Pop-Portobello Road",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.003328,
+     53.350159
+    ]
+   },
+   "properties": {
+    "name": "Bulwark Games Board Game Café",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.358562,
+     50.914493
+    ]
+   },
+   "properties": {
+    "name": "Buy Play Trade - Pokémon Store - Southampton",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.461642,
+     51.599457
+    ]
+   },
+   "properties": {
+    "name": "Cali Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.98779,
+     53.406288
+    ]
+   },
+   "properties": {
+    "name": "Card Empire",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.236197,
+     53.482518
+    ]
+   },
+   "properties": {
+    "name": "Card Empire",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.156769,
+     53.411469
+    ]
+   },
+   "properties": {
+    "name": "Card Empire",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.151962,
+     52.952312
+    ]
+   },
+   "properties": {
+    "name": "Card Empire Nottingham",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.472602,
+     53.375681
+    ]
+   },
+   "properties": {
+    "name": "Card Empire Sheffield",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.544088,
+     51.386066
+    ]
+   },
+   "properties": {
+    "name": "Cataclysm Games UK",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.729967,
+     52.039606
+    ]
+   },
+   "properties": {
+    "name": "Catch 'n' Collect",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.611649,
+     53.389685
+    ]
+   },
+   "properties": {
+    "name": "Celestial collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.176346,
+     51.078142
+    ]
+   },
+   "properties": {
+    "name": "Chaos Cards Tabletop Gaming Centre",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.341568,
+     51.750949
+    ]
+   },
+   "properties": {
+    "name": "Chaos City Comics",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.57361,
+     54.855591
+    ]
+   },
+   "properties": {
+    "name": "Chester Le Geek",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.691285,
+     52.633827
+    ]
+   },
+   "properties": {
+    "name": "Coliseum Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.433403,
+     54.340185
+    ]
+   },
+   "properties": {
+    "name": "Collectamania",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.48048,
+     51.208866
+    ]
+   },
+   "properties": {
+    "name": "Collecteebles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.519341,
+     51.653619
+    ]
+   },
+   "properties": {
+    "name": "Collectors Cardhouse",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.320318,
+     52.539313
+    ]
+   },
+   "properties": {
+    "name": "Collectors Corner LTD",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.946235,
+     52.094066
+    ]
+   },
+   "properties": {
+    "name": "Comic Clash",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.778613,
+     50.8381
+    ]
+   },
+   "properties": {
+    "name": "Comics Games and Coffee Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.405754,
+     50.90588
+    ]
+   },
+   "properties": {
+    "name": "Cool! Merch Southampton",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.147316,
+     52.659308
+    ]
+   },
+   "properties": {
+    "name": "Cosmic Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.804635,
+     51.572004
+    ]
+   },
+   "properties": {
+    "name": "Crazy Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.474507,
+     52.921208
+    ]
+   },
+   "properties": {
+    "name": "Critical Hit - Derby",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.218481,
+     51.503539
+    ]
+   },
+   "properties": {
+    "name": "Dark Sphere Shepherd's Bush Gaming Centre",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.055539,
+     54.534509
+    ]
+   },
+   "properties": {
+    "name": "Decked Out TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.084013,
+     51.282605
+    ]
+   },
+   "properties": {
+    "name": "Dice & Destiny",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.404463,
+     50.908325
+    ]
+   },
+   "properties": {
+    "name": "Dice & Dumplings",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.62977,
+     55.468405
+    ]
+   },
+   "properties": {
+    "name": "DOMINION",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.574672,
+     53.536999
+    ]
+   },
+   "properties": {
+    "name": "DSCollectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.522786,
+     51.381923
+    ]
+   },
+   "properties": {
+    "name": "Eclipse Gaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.815975,
+     51.394053
+    ]
+   },
+   "properties": {
+    "name": "Elemental Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.022626,
+     52.0465
+    ]
+   },
+   "properties": {
+    "name": "Elite 4 Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.623872,
+     53.540705
+    ]
+   },
+   "properties": {
+    "name": "Evolution Trading Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.472336,
+     50.840155
+    ]
+   },
+   "properties": {
+    "name": "Famous Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.135765,
+     51.510055
+    ]
+   },
+   "properties": {
+    "name": "Fanatics Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.320512,
+     53.425277
+    ]
+   },
+   "properties": {
+    "name": "Findablez",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.1585,
+     56.109489
+    ]
+   },
+   "properties": {
+    "name": "Fire & Lightning Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.257791,
+     55.864951
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.144065,
+     50.823049
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet Brighton",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.133299,
+     52.205823
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet Cambridge",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.925517,
+     54.599318
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet International",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.291522,
+     52.624583
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet Norwich",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.402895,
+     50.902935
+    ]
+   },
+   "properties": {
+    "name": "Forbidden Planet Southampton",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.252653,
+     51.862478
+    ]
+   },
+   "properties": {
+    "name": "Full Fire TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.295018,
+     53.591687
+    ]
+   },
+   "properties": {
+    "name": "Funky Figures",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.631679,
+     53.54715
+    ]
+   },
+   "properties": {
+    "name": "Funky Figures",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.979612,
+     51.348463
+    ]
+   },
+   "properties": {
+    "name": "G3 - Toys",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.590043,
+     51.456513
+    ]
+   },
+   "properties": {
+    "name": "Game Corner",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.897057,
+     52.481894
+    ]
+   },
+   "properties": {
+    "name": "Game HQ",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.9813,
+     55.865933
+    ]
+   },
+   "properties": {
+    "name": "Game XP",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.382178,
+     57.286867
+    ]
+   },
+   "properties": {
+    "name": "Gamers n Geeks",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.017919,
+     53.958663
+    ]
+   },
+   "properties": {
+    "name": "Gathering Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.993154,
+     53.046063
+    ]
+   },
+   "properties": {
+    "name": "Geckos",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.519988,
+     51.611657
+    ]
+   },
+   "properties": {
+    "name": "GEEK GARAGE UK",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.093991,
+     51.769264
+    ]
+   },
+   "properties": {
+    "name": "Geek Retreat Harlow",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.251974,
+     55.859337
+    ]
+   },
+   "properties": {
+    "name": "Geek-aboo",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.577917,
+     54.894314
+    ]
+   },
+   "properties": {
+    "name": "Geekiam Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.427971,
+     53.235674
+    ]
+   },
+   "properties": {
+    "name": "Geeks Headquarters",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.971612,
+     51.457137
+    ]
+   },
+   "properties": {
+    "name": "GeekStoreStuff",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.032618,
+     53.559986
+    ]
+   },
+   "properties": {
+    "name": "Giftdude",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.472791,
+     53.700411
+    ]
+   },
+   "properties": {
+    "name": "Go Go Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.738544,
+     56.004907
+    ]
+   },
+   "properties": {
+    "name": "Grasshopper Toy Shop",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0868,
+     53.562457
+    ]
+   },
+   "properties": {
+    "name": "Grim Dice Tabletop Gaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.693114,
+     53.758398
+    ]
+   },
+   "properties": {
+    "name": "Harlequins",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.683143,
+     51.730206
+    ]
+   },
+   "properties": {
+    "name": "Hex Labs Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.99258,
+     56.459979
+    ]
+   },
+   "properties": {
+    "name": "Highlander Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.404501,
+     50.902141
+    ]
+   },
+   "properties": {
+    "name": "hmv",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.125494,
+     53.22646
+    ]
+   },
+   "properties": {
+    "name": "Hobby Shop",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.663054,
+     51.917137
+    ]
+   },
+   "properties": {
+    "name": "Impact League TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.297675,
+     52.635461
+    ]
+   },
+   "properties": {
+    "name": "Into The Poke-Abyss",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.754931,
+     53.795824
+    ]
+   },
+   "properties": {
+    "name": "Its all Geek to me",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.213981,
+     52.927753
+    ]
+   },
+   "properties": {
+    "name": "Jakes Breaks",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.612295,
+     54.487317
+    ]
+   },
+   "properties": {
+    "name": "John Anderson Toy Masters",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.280191,
+     51.937409
+    ]
+   },
+   "properties": {
+    "name": "JRK Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.108442,
+     51.565027
+    ]
+   },
+   "properties": {
+    "name": "Kaboom Cards UK (Kaboom Sports Trading Cards Ltd)",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.27595,
+     50.831923
+    ]
+   },
+   "properties": {
+    "name": "KD Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.162116,
+     51.681954
+    ]
+   },
+   "properties": {
+    "name": "Kraken Gaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.087613,
+     51.264565
+    ]
+   },
+   "properties": {
+    "name": "Kushti comics",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.091241,
+     50.80046
+    ]
+   },
+   "properties": {
+    "name": "Last Pack Magic",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.675559,
+     51.489019
+    ]
+   },
+   "properties": {
+    "name": "Legion Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.334323,
+     53.742341
+    ]
+   },
+   "properties": {
+    "name": "Luck Box Cards and collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.97756,
+     51.348101
+    ]
+   },
+   "properties": {
+    "name": "M T Games Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.094486,
+     51.770205
+    ]
+   },
+   "properties": {
+    "name": "M&M VAULT",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.947507,
+     52.092707
+    ]
+   },
+   "properties": {
+    "name": "Magpie (Manchester House) Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.092458,
+     51.768939
+    ]
+   },
+   "properties": {
+    "name": "Marquee Models",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.91882,
+     52.476761
+    ]
+   },
+   "properties": {
+    "name": "MGA Collectables - Pokémon Card Shop",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.190575,
+     54.082235
+    ]
+   },
+   "properties": {
+    "name": "Mighty Lancer Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.039083,
+     53.431165
+    ]
+   },
+   "properties": {
+    "name": "MiniCollectz",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.204789,
+     51.236234
+    ]
+   },
+   "properties": {
+    "name": "Miwk",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.378924,
+     50.897876
+    ]
+   },
+   "properties": {
+    "name": "Monster Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.11534,
+     51.462571
+    ]
+   },
+   "properties": {
+    "name": "Morleys Brixton",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.89756,
+     51.67253
+    ]
+   },
+   "properties": {
+    "name": "Morrisons Daily",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.204254,
+     55.941954
+    ]
+   },
+   "properties": {
+    "name": "Mox in the Hole",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.098552,
+     51.497117
+    ]
+   },
+   "properties": {
+    "name": "Mythic Goblin",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.661023,
+     55.543764
+    ]
+   },
+   "properties": {
+    "name": "Mythics Trading Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.523075,
+     53.067405
+    ]
+   },
+   "properties": {
+    "name": "Nantwich Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.691088,
+     54.593225
+    ]
+   },
+   "properties": {
+    "name": "NCG Singles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.569719,
+     51.623728
+    ]
+   },
+   "properties": {
+    "name": "Nerd Base",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.593205,
+     51.522356
+    ]
+   },
+   "properties": {
+    "name": "Nerd Base Canvey Island",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.796821,
+     51.069418
+    ]
+   },
+   "properties": {
+    "name": "New Realities Gaming Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.215976,
+     51.443898
+    ]
+   },
+   "properties": {
+    "name": "Newsstand Comics",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.483492,
+     52.652803
+    ]
+   },
+   "properties": {
+    "name": "NextGen Trader Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.184753,
+     51.578396
+    ]
+   },
+   "properties": {
+    "name": "Ninja Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.180041,
+     55.939589
+    ]
+   },
+   "properties": {
+    "name": "NK Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.687909,
+     54.593548
+    ]
+   },
+   "properties": {
+    "name": "Northern Card Gaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.450723,
+     55.009646
+    ]
+   },
+   "properties": {
+    "name": "Northumbrian Tin Soldier",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.429093,
+     53.580131
+    ]
+   },
+   "properties": {
+    "name": "One Five One",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.148103,
+     51.36872
+    ]
+   },
+   "properties": {
+    "name": "One more! TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.432563,
+     56.395788
+    ]
+   },
+   "properties": {
+    "name": "Out of this Galaxy Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.031473,
+     51.532599
+    ]
+   },
+   "properties": {
+    "name": "P9 Card Game Bow",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.469443,
+     53.373974
+    ]
+   },
+   "properties": {
+    "name": "Patriot Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.082767,
+     51.652026
+    ]
+   },
+   "properties": {
+    "name": "Pearsons Enfield",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.270482,
+     52.227039
+    ]
+   },
+   "properties": {
+    "name": "Picklestix TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.270015,
+     51.189912
+    ]
+   },
+   "properties": {
+    "name": "Planet JJ's - Geekery",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.124457,
+     51.601055
+    ]
+   },
+   "properties": {
+    "name": "Poke Mart Card Store",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.21037,
+     55.95882
+    ]
+   },
+   "properties": {
+    "name": "Pokecards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.934243,
+     52.759123
+    ]
+   },
+   "properties": {
+    "name": "PokéHub",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.780323,
+     53.648137
+    ]
+   },
+   "properties": {
+    "name": "PokeHud",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.720292,
+     51.523461
+    ]
+   },
+   "properties": {
+    "name": "Pokemon cards Callum’s cards (In Thames antiques shop)",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.484364,
+     50.917225
+    ]
+   },
+   "properties": {
+    "name": "Pokestopbee Trading Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.126975,
+     52.583495
+    ]
+   },
+   "properties": {
+    "name": "PokeXchange",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.355764,
+     53.432843
+    ]
+   },
+   "properties": {
+    "name": "PokiLee's PokiWorld",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.48402,
+     53.317429
+    ]
+   },
+   "properties": {
+    "name": "Professor Bulk TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.354403,
+     51.434424
+    ]
+   },
+   "properties": {
+    "name": "Protect and Collect",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.065083,
+     53.57416
+    ]
+   },
+   "properties": {
+    "name": "PTG HIDEOUTS",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.322944,
+     54.999238
+    ]
+   },
+   "properties": {
+    "name": "Puca Puca Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.193525,
+     53.551273
+    ]
+   },
+   "properties": {
+    "name": "PulseCollective",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.165973,
+     51.457713
+    ]
+   },
+   "properties": {
+    "name": "QT Toys and Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.428026,
+     53.577848
+    ]
+   },
+   "properties": {
+    "name": "Raw Collectables TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.893925,
+     53.189757
+    ]
+   },
+   "properties": {
+    "name": "RECOLLECT LTD",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.027293,
+     53.752917
+    ]
+   },
+   "properties": {
+    "name": "Red Wizard : Gaming, Gifts and Creative Hub",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.249121,
+     52.373403
+    ]
+   },
+   "properties": {
+    "name": "Retroble",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.092252,
+     53.488186
+    ]
+   },
+   "properties": {
+    "name": "Rewind Collectable & Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.940052,
+     52.307305
+    ]
+   },
+   "properties": {
+    "name": "Rustys Collectables Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.403952,
+     50.912247
+    ]
+   },
+   "properties": {
+    "name": "Ryman Stationery",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.128193,
+     52.160888
+    ]
+   },
+   "properties": {
+    "name": "Scotsdales",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.209142,
+     51.320611
+    ]
+   },
+   "properties": {
+    "name": "SkyForge",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.835744,
+     51.823789
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Aylesbury",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.445583,
+     53.759105
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Blackburn",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.01947,
+     53.795915
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Blackpool",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.536787,
+     53.58545
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Bolton",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.754196,
+     53.804936
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Bradford",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.205848,
+     51.470764
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Cardiff",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.949007,
+     54.928168
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Carlisle",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.478938,
+     51.738392
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Chelmsford",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.100532,
+     51.913841
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Cheltenham",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.463465,
+     52.380393
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Coventry",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.119011,
+     51.372459
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Croydon",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.503305,
+     52.920382
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Derby",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.578109,
+     54.805389
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Durham",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.085396,
+     51.64286
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Epping",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.405423,
+     53.351038
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Fonthill",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.142264,
+     51.611456
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Friern Barnet",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.267071,
+     53.349546
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Jervis St",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.644475,
+     53.742556
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Leeds Birstall",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.605255,
+     53.816419
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Leeds Bridge / Kirkstall",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.541536,
+     53.789299
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Leeds Junction",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.142087,
+     52.649542
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Leicester",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.553009,
+     53.223407
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Lincoln",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.98695,
+     52.393914
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Longbridge",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.201355,
+     53.139916
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Mansfield",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.6397,
+     53.235157
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Naas",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.906244,
+     52.230651
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Northampton",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.124161,
+     52.947554
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Nottingham",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.136586,
+     53.558582
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Oldham",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.219596,
+     52.575366
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Peterborough",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.12746,
+     50.371191
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Plymouth",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.689463,
+     53.759626
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Preston",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.60296,
+     51.575075
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Rayleigh Weir",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.358226,
+     53.345014
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Sheffield",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.312731,
+     50.925527
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Southampton",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.734052,
+     53.444778
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores St. Helens",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.51397,
+     51.436413
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Staines",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.754214,
+     51.57193
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Swindon",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.2273,
+     53.446065
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Swords",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.700279,
+     52.627561
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Tamworth",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62214,
+     54.924011
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Team Valley",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.47809,
+     51.517918
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Uxbridge",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.477983,
+     51.517815
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Uxbridge",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.507639,
+     53.679702
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Wakefield",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.507388,
+     55.007982
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Wallsend",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.597972,
+     53.409447
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Warrington",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.655349,
+     53.54436
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores Wigan",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.045452,
+     53.988454
+    ]
+   },
+   "properties": {
+    "name": "Smyths Toys Superstores York Monks Cross",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.741382,
+     50.741421
+    ]
+   },
+   "properties": {
+    "name": "Snaps Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.998341,
+     50.782441
+    ]
+   },
+   "properties": {
+    "name": "Snaps Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.085312,
+     53.963257
+    ]
+   },
+   "properties": {
+    "name": "Sore Thumb Retro Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.177546,
+     51.481527
+    ]
+   },
+   "properties": {
+    "name": "Spawn Point Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.097405,
+     51.488642
+    ]
+   },
+   "properties": {
+    "name": "Spellbound Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.558293,
+     51.340498
+    ]
+   },
+   "properties": {
+    "name": "Stacked 'N' Packed - Trading Cards & Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.074177,
+     50.154147
+    ]
+   },
+   "properties": {
+    "name": "Stans Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.246472,
+     55.85633
+    ]
+   },
+   "properties": {
+    "name": "Static Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.337883,
+     51.473376
+    ]
+   },
+   "properties": {
+    "name": "Stylecreep",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.403846,
+     50.903662
+    ]
+   },
+   "properties": {
+    "name": "TGJones",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.045009,
+     53.988572
+    ]
+   },
+   "properties": {
+    "name": "TGJones",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.08337,
+     53.95844
+    ]
+   },
+   "properties": {
+    "name": "TGJones",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.183492,
+     51.57833
+    ]
+   },
+   "properties": {
+    "name": "TGJones",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.083912,
+     51.651696
+    ]
+   },
+   "properties": {
+    "name": "TGJones",
+    "category": "chain",
+    "layer": "Retail Chains"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.480589,
+     54.14952
+    ]
+   },
+   "properties": {
+    "name": "The Adventurer's Tavern",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.125804,
+     52.200837
+    ]
+   },
+   "properties": {
+    "name": "The Box Room Board Game Café",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.065433,
+     51.491895
+    ]
+   },
+   "properties": {
+    "name": "The Brotherhood Games Pokémon and Yu-Gi-Oh Store",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.648861,
+     53.590578
+    ]
+   },
+   "properties": {
+    "name": "The Card Den LTD",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.982309,
+     52.583477
+    ]
+   },
+   "properties": {
+    "name": "The Card Loft",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.467919,
+     52.137439
+    ]
+   },
+   "properties": {
+    "name": "The Card Market - Pokemon TCG, Lorcana, One Piece, Flesh & Blood",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.247772,
+     51.866487
+    ]
+   },
+   "properties": {
+    "name": "The Cavern",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.245985,
+     50.677819
+    ]
+   },
+   "properties": {
+    "name": "The Chad Powell Gallery & Shop",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.124002,
+     50.795269
+    ]
+   },
+   "properties": {
+    "name": "The Complete Card Shop",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.884608,
+     53.566917
+    ]
+   },
+   "properties": {
+    "name": "The Deck Den",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.21979,
+     52.192067
+    ]
+   },
+   "properties": {
+    "name": "The Dice Box",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.533314,
+     52.291704
+    ]
+   },
+   "properties": {
+    "name": "The Games Den",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.495529,
+     53.683713
+    ]
+   },
+   "properties": {
+    "name": "The Games Pit",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.885414,
+     52.44821
+    ]
+   },
+   "properties": {
+    "name": "The Graded Gallery",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.337016,
+     52.06139
+    ]
+   },
+   "properties": {
+    "name": "The Hive Gaming",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.93599,
+     54.895412
+    ]
+   },
+   "properties": {
+    "name": "The Magic Chest",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.147755,
+     51.456894
+    ]
+   },
+   "properties": {
+    "name": "The Movie Shack",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.369461,
+     51.444922
+    ]
+   },
+   "properties": {
+    "name": "The Mug and Meeple",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.462848,
+     53.388482
+    ]
+   },
+   "properties": {
+    "name": "The Outpost",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.726055,
+     56.017045
+    ]
+   },
+   "properties": {
+    "name": "The Poke Stop Store",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.18309,
+     52.328293
+    ]
+   },
+   "properties": {
+    "name": "The Pokemon Plug",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.337572,
+     53.768002
+    ]
+   },
+   "properties": {
+    "name": "The Range, Hull",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.396072,
+     52.755076
+    ]
+   },
+   "properties": {
+    "name": "The Retro Retreat and Pokemon Grading Centre",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.098779,
+     51.464003
+    ]
+   },
+   "properties": {
+    "name": "The TCG Den",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.803386,
+     54.048924
+    ]
+   },
+   "properties": {
+    "name": "The Vault - Lancaster",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.86747,
+     54.071917
+    ]
+   },
+   "properties": {
+    "name": "The Vault - Morecambe",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.084109,
+     51.651459
+    ]
+   },
+   "properties": {
+    "name": "The Works",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.955798,
+     53.078622
+    ]
+   },
+   "properties": {
+    "name": "TheDiceJail",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.108673,
+     57.143669
+    ]
+   },
+   "properties": {
+    "name": "Thistle Tavern",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.594818,
+     53.387632
+    ]
+   },
+   "properties": {
+    "name": "TK's Hideout",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.083604,
+     51.430641
+    ]
+   },
+   "properties": {
+    "name": "TokyoToys",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.735673,
+     51.340692
+    ]
+   },
+   "properties": {
+    "name": "TokyoToys",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.297126,
+     52.635406
+    ]
+   },
+   "properties": {
+    "name": "TopDog TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.567643,
+     54.600983
+    ]
+   },
+   "properties": {
+    "name": "Total Cards - Gaming Centre (Newton Aycliffe)",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.587043,
+     51.483699
+    ]
+   },
+   "properties": {
+    "name": "Trade Off TCG",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.296442,
+     50.6985
+    ]
+   },
+   "properties": {
+    "name": "Trading Card Kingdom",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.201031,
+     51.45574
+    ]
+   },
+   "properties": {
+    "name": "Trading Card Shop",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.219508,
+     55.943396
+    ]
+   },
+   "properties": {
+    "name": "Trainers Mile LTD",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.080214,
+     53.96076
+    ]
+   },
+   "properties": {
+    "name": "Travelling Man",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.197449,
+     53.001545
+    ]
+   },
+   "properties": {
+    "name": "Trident Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.197841,
+     53.143415
+    ]
+   },
+   "properties": {
+    "name": "TridentCards - Mansfield",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.017056,
+     51.402441
+    ]
+   },
+   "properties": {
+    "name": "Troll Trader Bromley",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.159518,
+     50.375225
+    ]
+   },
+   "properties": {
+    "name": "UltraViolet84",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.14345,
+     52.945632
+    ]
+   },
+   "properties": {
+    "name": "Underworld Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.701715,
+     52.487607
+    ]
+   },
+   "properties": {
+    "name": "Unified Cards",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.096927,
+     57.147349
+    ]
+   },
+   "properties": {
+    "name": "Vintage toys and collectables aberdeen",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.084117,
+     51.651602
+    ]
+   },
+   "properties": {
+    "name": "Waitrose & Partners",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.35762,
+     51.577083
+    ]
+   },
+   "properties": {
+    "name": "Wayland Games Centre - Brentwood",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.389262,
+     51.369202
+    ]
+   },
+   "properties": {
+    "name": "We Love Collectibles Ltd",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.295756,
+     57.149422
+    ]
+   },
+   "properties": {
+    "name": "Westhill Service Station",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.124799,
+     53.227001
+    ]
+   },
+   "properties": {
+    "name": "WHSmith",
+    "category": "occasional",
+    "layer": "Occasional Stockists"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.813404,
+     53.075683
+    ]
+   },
+   "properties": {
+    "name": "Wild Ways",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.01239,
+     51.450416
+    ]
+   },
+   "properties": {
+    "name": "Wishlist Collectables",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8992,
+     52.475589
+    ]
+   },
+   "properties": {
+    "name": "Worlds Apart",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.341787,
+     51.807376
+    ]
+   },
+   "properties": {
+    "name": "Zard Cardz LTD",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.206103,
+     52.643827
+    ]
+   },
+   "properties": {
+    "name": "Zatu Games",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  }
+ ]
+}

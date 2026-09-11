@@ -15,7 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css?v=20260911d">
 </head>
 <body class="has-page-bg">
   <a class="skip-link" href="#main">Skip to the form</a>
@@ -40,22 +44,153 @@
     </nav>
   </header>
 
-  <main class="page page-wide" id="main">
+  <main class="page" id="main">
     <span class="eyebrow">Add to the map</span>
     <h1>Submit a store</h1>
-    <p class="lede">Know a shop selling Pokémon cards that isn't on the map yet? Add it below — the name and a rough location is enough to get started.</p>
+    <p class="lede">Know a shop selling Pokémon cards that isn't on the map yet? It takes a minute. Every submission is checked by a human before it goes live.</p>
 
-    <div class="form-frame">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSedPEOdfThhw_nLRUBGCSSk42CPo7I-7nYjNnvnbSBi5FZhmA/viewform?embedded=true"
-        title="Store submission form"
-        loading="lazy">Loading…</iframe>
+    <!-- ---------- Success ---------- -->
+    <div class="card card-holo submit-done" id="done" hidden>
+      <div class="done-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 12.5l5.5 5.5L20 7"/></svg>
+      </div>
+      <h2>Thanks — that's in the queue</h2>
+      <p class="prose">Submissions are reviewed by hand before they appear, usually within a few days. If anything's unclear we'll get in touch, assuming you left an email.</p>
+      <div class="done-actions">
+        <a class="btn btn-primary" href="index.html">Back to the map</a>
+        <button class="btn btn-ghost" id="againBtn" type="button">Add another shop</button>
+      </div>
     </div>
 
-    <p style="margin-top:1.25rem;font-size:.92rem;color:var(--ink-faint)">
-      Submissions are reviewed before they go live, so it may take a little while to appear on the map.
-      Trouble with the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSedPEOdfThhw_nLRUBGCSSk42CPo7I-7nYjNnvnbSBi5FZhmA/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.
-    </p>
+    <!-- ---------- Form ---------- -->
+    <form class="card card-holo submit-form" id="form" novalidate>
+
+      <!-- Bots love a field labelled like this. People never see it. -->
+      <div class="hp" aria-hidden="true">
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <section class="form-section">
+        <h2>The shop</h2>
+
+        <div class="field">
+          <label for="name">Shop name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" required maxlength="120"
+                 autocomplete="off" placeholder="e.g. Chaos Cards">
+          <p class="field-error" data-for="name"></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>What kind of shop is it? <span class="req" aria-hidden="true">*</span></legend>
+          <div class="type-grid">
+            <label class="type-option" data-cat="independent">
+              <input type="radio" name="category" value="independent" required>
+              <span class="type-body">
+                <span class="type-name">Independent store</span>
+                <span class="type-hint">Local game shop, hobby shop, card specialist</span>
+              </span>
+            </label>
+            <label class="type-option" data-cat="occasional">
+              <input type="radio" name="category" value="occasional">
+              <span class="type-body">
+                <span class="type-name">Occasional stockist</span>
+                <span class="type-hint">Supermarket, newsagent, bookshop — stocks them sometimes</span>
+              </span>
+            </label>
+            <label class="type-option" data-cat="chain">
+              <input type="radio" name="category" value="chain">
+              <span class="type-body">
+                <span class="type-name">Retail chain</span>
+                <span class="type-hint">Nationwide toy or game retailer</span>
+              </span>
+            </label>
+          </div>
+          <p class="field-error" data-for="category"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="website">Website <span class="opt">optional</span></label>
+          <input id="website" name="website" type="url" maxlength="200"
+                 autocomplete="off" placeholder="https://…">
+          <p class="field-error" data-for="website"></p>
+        </div>
+
+        <div class="field">
+          <label for="notes">Anything worth knowing? <span class="opt">optional</span></label>
+          <textarea id="notes" name="notes" rows="3" maxlength="300"
+                    placeholder="Singles as well as sealed, runs weekly tournaments, that sort of thing."></textarea>
+          <p class="field-hint"><span id="notesCount">0</span>/300</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Where it is</h2>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="address">Street address <span class="req" aria-hidden="true">*</span></label>
+            <input id="address" name="address" type="text" required maxlength="160"
+                   autocomplete="off" placeholder="12 High Street">
+            <p class="field-error" data-for="address"></p>
+          </div>
+          <div class="field">
+            <label for="town">Town or city <span class="req" aria-hidden="true">*</span></label>
+            <input id="town" name="town" type="text" required maxlength="80"
+                   autocomplete="off" placeholder="Cardiff">
+            <p class="field-error" data-for="town"></p>
+          </div>
+        </div>
+
+        <div class="field field-postcode">
+          <label for="postcode">Postcode <span class="req" aria-hidden="true">*</span></label>
+          <div class="postcode-row">
+            <input id="postcode" name="postcode" type="text" required maxlength="10"
+                   autocomplete="off" placeholder="CF10 1AA" spellcheck="false">
+            <button class="btn btn-primary btn-find" id="findBtn" type="button">Find on map</button>
+          </div>
+          <p class="field-error" data-for="postcode"></p>
+          <p class="field-hint">We'll look it up so you can drop the pin exactly on the door.</p>
+        </div>
+
+        <!-- Location confirmation -->
+        <div class="locate" id="locate" hidden>
+          <div class="locate-head">
+            <h3>Drag the pin onto the shop</h3>
+            <p id="locateStatus">Move the marker to the exact spot, then carry on.</p>
+          </div>
+          <div class="locate-map" id="pickMap"></div>
+          <p class="locate-coords" id="coordsOut"></p>
+        </div>
+
+        <!-- Duplicate warning -->
+        <div class="dupe-warn" id="dupeWarn" hidden>
+          <strong>This might already be on the map.</strong>
+          <ul id="dupeList"></ul>
+          <p>If yours is a different shop, carry on — we'll check when reviewing.</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>You</h2>
+        <div class="field">
+          <label for="email">Your email <span class="opt">optional</span></label>
+          <input id="email" name="email" type="email" maxlength="120"
+                 autocomplete="email" placeholder="you@example.com">
+          <p class="field-hint">Only used to ask you a question if a detail is unclear. Never published, never mailed to.</p>
+          <p class="field-error" data-for="email"></p>
+        </div>
+      </section>
+
+      <div class="form-foot">
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <button class="btn btn-gold btn-submit" id="submitBtn" type="submit">
+          <span class="btn-label">Submit this shop</span>
+          <span class="btn-spin" aria-hidden="true"></span>
+        </button>
+        <p class="form-foot-note">Reviewed by a human before it appears on the map.</p>
+      </div>
+    </form>
   </main>
 
   <footer class="site-footer">
@@ -66,6 +201,10 @@
     </nav>
     <p style="margin:0">Chasing Cardboard — a community project. Not affiliated with Nintendo, Creatures Inc., GAME FREAK inc. or The Pokémon Company.</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="form.js?v=20260911d"></script>
 
   <!-- 100% privacy-first analytics -->
   <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
