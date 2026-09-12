@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-11T20:59:45+00:00",
-  "count": 286,
+  "generated": "2026-09-12T18:51:56+00:00",
+  "count": 287,
   "categories": [
    {
     "slug": "independent",
-    "count": 211
+    "count": 212
    },
    {
     "slug": "chain",
@@ -3394,6 +3394,22 @@
     "name": "Stylecreep",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.085875,
+     53.957285
+    ]
+   },
+   "properties": {
+    "name": "Team Rocket Hideout York",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "notes": "Singles, Sealed but sometimes over market price, mix of Jap/Eng/Kor"
    }
   },
   {
