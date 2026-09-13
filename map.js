@@ -12,6 +12,13 @@
     chain:       { label: 'Retail chains',        color: '#e0a800' }
   };
   var FALLBACK = { label: 'Other', color: '#6b7194' };
+
+  // The idle wanderer. Off until there's artwork worth showing — flip this to
+  // true to switch it back on. ccWander() in the console still works either
+  // way, so you can preview a sprite without enabling it for visitors.
+  var WANDERER_ENABLED = false;
+  // How long the map sits untouched before the wanderer strolls past
+  var IDLE_SECONDS = 60;
   var UK_CENTRE = [54.2, -2.6];
 
   var el = function (id) { return document.getElementById(id); };
@@ -272,6 +279,7 @@
   function onSearchInput(value) {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(function () {
+      if (checkMagic(value)) return;
       state.query = normalise(value);
       applyFilters();
       el('geoHint').hidden = !(state.query && state.matched.length === 0);
@@ -365,7 +373,7 @@
     var btn = el('themeToggle');
     if (!btn) return;
 
-    var pixel = theme === 'pixel';
+    var pixel = theme !== 'classic';
     btn.setAttribute('aria-pressed', pixel ? 'true' : 'false');
     var label = btn.querySelector('.theme-label');
     if (label) label.textContent = pixel ? 'Classic view' : 'Pixel view';
@@ -377,12 +385,113 @@
   function initTheme() {
     var saved = null;
     try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
-    applyTheme(saved === 'pixel' || saved === 'classic' ? saved : 'pixel');
+    applyTheme(['pixel', 'classic', 'night'].indexOf(saved) !== -1 ? saved : 'pixel');
   }
 
   function toggleTheme() {
     var now = document.documentElement.getAttribute('data-map-theme');
-    applyTheme(now === 'pixel' ? 'classic' : 'pixel');
+    // 'night' is the unlockable one — the button can leave it but never reach it
+    applyTheme(now === 'classic' ? 'pixel' : 'classic');
+  }
+
+  /* =======================================================================
+     Easter eggs. Nothing here affects the map's actual job, and each one
+     fails quietly if a piece is missing.
+     ======================================================================= */
+
+  function toast(title, line) {
+    var old = document.querySelector('.cc-toast');
+    if (old) old.remove();
+    var t = document.createElement('div');
+    t.className = 'cc-toast';
+    t.innerHTML = '<strong>' + esc(title) + '</strong><span>' + esc(line) + '</span>';
+    document.body.appendChild(t);
+    setTimeout(function () { t.classList.add('is-going'); }, 4200);
+    setTimeout(function () { if (t.parentNode) t.remove(); }, 5000);
+  }
+
+  /* --- 1. The old cheat code unlocks the night map ---------------------- */
+  var KONAMI = ['arrowup', 'arrowup', 'arrowdown', 'arrowdown',
+                'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'b', 'a'];
+  var konamiAt = 0;
+
+  function watchKonami(e) {
+    // Never eat keystrokes meant for the search box
+    if (document.activeElement &&
+        /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
+
+    var got = String(e.key || '').toLowerCase();
+    if (got === KONAMI[konamiAt]) {
+      konamiAt++;
+      if (konamiAt === KONAMI.length) {
+        konamiAt = 0;
+        applyTheme('night');
+        toast('Night map unlocked', 'Hit the view button to get back to daylight.');
+      }
+    } else {
+      konamiAt = (got === KONAMI[0]) ? 1 : 0;
+    }
+  }
+
+  /* --- 2. The wanderer, out for a stroll --------------------------------
+     The artwork lives in sprites/wanderer.png and is yours to replace —
+     see sprites/README.md. Nothing here knows what it looks like. */
+
+  var idleTimer, wandering = false;
+
+  function sendWanderer() {
+    if (wandering || document.hidden) return;
+    var holder = document.querySelector('.map-holder');
+    if (!holder) return;
+    wandering = true;
+
+    var w = document.createElement('div');
+    w.className = 'cc-wanderer';
+    if (Math.random() < 0.5) w.classList.add('is-backwards');
+    holder.appendChild(w);
+
+    setTimeout(function () {
+      if (w.parentNode) w.remove();
+      wandering = false;
+    }, 19000);
+  }
+
+  function resetIdle() {
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(sendWanderer, IDLE_SECONDS * 1000);
+  }
+
+  /* --- 3. Say the magic word in the search box -------------------------- */
+  var MAGIC = ['shiny', 'holo', 'foil', 'sparkle'];
+  var foilTimer;
+
+  function checkMagic(value) {
+    if (MAGIC.indexOf(String(value).trim().toLowerCase()) === -1) return false;
+    document.body.classList.add('is-foil');
+    clearTimeout(foilTimer);
+    foilTimer = setTimeout(function () { document.body.classList.remove('is-foil'); }, 4500);
+    toast('Foil finish', 'Every pin on the map, briefly worth a great deal more.');
+    return true;
+  }
+
+  function initEggs() {
+    document.addEventListener('keydown', watchKonami);
+
+    /* Preview hook — works whether or not the wanderer is enabled, so you can
+       check a new sprite without turning it on for everyone. */
+    window.ccWander = function () { wandering = false; sendWanderer(); };
+
+    if (!WANDERER_ENABLED) return;
+
+    ['mousemove', 'keydown', 'wheel', 'touchstart'].forEach(function (ev) {
+      document.addEventListener(ev, resetIdle, { passive: true });
+    });
+    map.on('moveend zoomend', resetIdle);
+    resetIdle();
+
+    if (/wander/.test(location.hash + location.search)) {
+      setTimeout(window.ccWander, 600);
+    }
   }
 
   /* --- Mobile sheet ---------------------------------------------------- */
@@ -503,6 +612,7 @@
       (updated ? ' · updated ' + new Date(updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
 
     initTheme();
+    initEggs();
     el('mapLoading').hidden = true;
     wireUp();
   }
@@ -528,6 +638,16 @@
     );
     return;
   }
+
+  try {
+    console.log(
+      '%c Chasing Cardboard %c a community map of UK shops selling Pokémon cards ',
+      'background:#2b3050;color:#ede68c;font-weight:bold;padding:4px 6px;border-radius:3px 0 0 3px',
+      'background:#73cea5;color:#2b3050;padding:4px 6px;border-radius:0 3px 3px 0'
+    );
+    console.log('Know a shop that\'s missing? https://chasingcardboard.github.io/submit.html');
+    console.log('There are a few things hidden in here. Try the old cheat code on your keyboard.');
+  } catch (e) {}
 
   fetch('stores.geojson', { cache: 'no-cache' })
     .then(function (r) {

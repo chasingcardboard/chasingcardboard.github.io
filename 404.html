@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost — Chasing Cardboard</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#3b4cca">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=20260913">
+
+  <style>
+    /* This page is small enough to carry its own layout */
+    body.lost {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #73cea5;
+      background-image:
+        linear-gradient(rgba(237, 230, 140, .35) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(237, 230, 140, .35) 2px, transparent 2px);
+      background-size: 32px 32px;
+      padding: 2rem 1rem;
+    }
+    .lost-card {
+      width: min(560px, 100%);
+      padding: clamp(1.5rem, 5vw, 2.5rem);
+      text-align: center;
+      background: #fffdf0;
+      border: 4px solid #2b3050;
+      box-shadow: 8px 8px 0 rgba(43, 48, 80, .35);
+    }
+    .lost-code {
+      font-family: 'Press Start 2P', ui-monospace, monospace;
+      font-size: clamp(1.6rem, 7vw, 2.6rem);
+      color: #2b3050;
+      margin: 0 0 1rem;
+      letter-spacing: .04em;
+    }
+    .lost-sprite {
+      width: 96px; height: 96px;
+      margin: 0 auto 1.25rem;
+      background: url('/sprites/wanderer.png') 0 0 / 192px 96px no-repeat;
+      image-rendering: pixelated;
+      animation: lost-bob 1.4s steps(2) infinite;
+    }
+    @keyframes lost-bob {
+      0%, 100% { transform: translateY(0);    background-position-x: 0; }
+      50%      { transform: translateY(-6px); background-position-x: -96px; }
+    }
+    .lost-card p { color: #4a4f70; margin: 0 0 1.5rem; }
+    .lost-actions { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }
+    .lost-actions .btn {
+      border-radius: 0;
+      border: 3px solid #2b3050;
+      font-family: 'Press Start 2P', ui-monospace, monospace;
+      font-size: .62rem;
+      line-height: 1.7;
+      color: #2b3050;
+      background: #ede68c;
+      box-shadow: inset 2px 2px 0 rgba(255,255,255,.5),
+                  inset -2px -2px 0 rgba(43,48,80,.2),
+                  4px 4px 0 rgba(43, 48, 80, .3);
+    }
+    .lost-actions .btn:hover { transform: translate(1px, 1px); }
+    .lost-actions .btn-alt { background: #addeef; }
+    @media (prefers-reduced-motion: reduce) { .lost-sprite { animation: none; } }
+  </style>
+</head>
+<body class="lost">
+  <main class="lost-card">
+    <div class="lost-sprite" aria-hidden="true"></div>
+    <h1 class="lost-code">404</h1>
+    <p>There's no card shop down this road. Whatever you were after has moved,
+       or never existed — happens to the best of us.</p>
+    <div class="lost-actions">
+      <a class="btn" href="/">Back to the map</a>
+      <a class="btn btn-alt" href="/submit.html">Add a shop</a>
+    </div>
+  </main>
+
+  <!-- 100% privacy-first analytics -->
+  <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>
