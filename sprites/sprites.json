@@ -1,0 +1,18 @@
+{
+  "_comment": "Sheets the wanderer picks from, at random. Add a filename here after dropping it in this folder. The number at the end of a name is its frame count; -left- / -right- pairs are matched up automatically and used instead of mirroring.",
+  "sprites": [
+    "Bulb-left-6.png",
+    "Bulb-right-6.png",
+    "Charmander-left-4.png",
+    "Charmander-right-4.png",
+    "Dragonite-left-4.png",
+    "Dragonite-left-4.png",
+    "Jiggle-left-5.png",
+    "Jiggle-right-5.png",
+    "Pikachu-left-4.png",
+    "Pikachu-right-4.png",
+    "Squirtle-left-4.png",
+    "Squirtle-left-4.png"
+
+  ]
+}
