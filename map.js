@@ -16,7 +16,7 @@
   // The idle wanderer. Off until there's artwork worth showing — flip this to
   // true to switch it back on. ccWander() in the console still works either
   // way, so you can preview a sprite without enabling it for visitors.
-  var WANDERER_ENABLED = false;
+  var WANDERER_ENABLED = true;
   // How long the map sits untouched before the wanderer strolls past
   var IDLE_SECONDS = 60;
   var UK_CENTRE = [54.2, -2.6];
@@ -434,20 +434,138 @@
   }
 
   /* --- 2. The wanderer, out for a stroll --------------------------------
-     The artwork lives in sprites/wanderer.png and is yours to replace —
-     see sprites/README.md. Nothing here knows what it looks like. */
+     The artwork lives in sprites/ and is yours — see sprites/README.md.
+     Nothing here knows what any of it looks like. Three conventions do all
+     the work, all of them in the filename:
+
+       wanderer-6.png          6 frames, one sheet, mirrored when it walks
+                               the other way
+       wanderer-right-6.png    6 frames facing right; its partner
+       wanderer-left-6.png     6 frames facing left — used as-is, no mirroring
+
+     The number at the end is the frame count. If there isn't one, it's worked
+     out from the image assuming square frames (width / height).
+
+     Which sheets exist is listed in sprites/sprites.json; one is picked at
+     random each time the wanderer appears. If that file is missing or empty
+     we fall back to SPRITE_FALLBACK below. */
+
+  var SPRITE_MANIFEST = 'sprites/sprites.json';
+  var SPRITE_FALLBACK = 'sprites/wanderer-right-6.png';
 
   var idleTimer, wandering = false;
+  var critters = null;        // [{ right: sheet, left: sheet|null }]
+  var spritesReady = false;   // set once the manifest has been dealt with
 
-  function sendWanderer() {
+  function framesFor(name, img) {
+    var named = /-(\d+)\s*\.[a-z0-9]+$/i.exec(name);
+    var n = named ? parseInt(named[1], 10)
+                  : Math.round(img.naturalWidth / Math.max(1, img.naturalHeight));
+    return n > 0 ? n : 1;
+  }
+
+  function loadSheet(path) {
+    return new Promise(function (resolve) {
+      var img = new Image();
+      img.onload = function () {
+        var frames = framesFor(path, img);
+        resolve({
+          url: path,
+          frames: frames,
+          w: Math.round(img.naturalWidth / frames),
+          h: img.naturalHeight
+        });
+      };
+      img.onerror = function () { resolve(null); };
+      img.src = path;
+    });
+  }
+
+  /* A file naming a direction implies a partner facing the other way. Group
+     the two so one critter has both, and mark it so CSS skips the mirror. */
+  function partnerOf(path) {
+    if (/-right(-|\.)/i.test(path)) return path.replace(/-right(-|\.)/i, '-left$1');
+    if (/-left(-|\.)/i.test(path))  return path.replace(/-left(-|\.)/i, '-right$1');
+    return null;
+  }
+
+  function initSprites() {
+    fetch(SPRITE_MANIFEST, { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (data) {
+        var names = (data && (data.sprites || data.wanderers)) || [];
+        if (!names.length) names = [SPRITE_FALLBACK];
+
+        // Manifest entries are bare filenames; allow full paths too
+        names = names.map(function (n) {
+          return /\//.test(n) ? n : 'sprites/' + n;
+        });
+
+        // Collapse left/right pairs to one entry each
+        var seen = {}, pairs = [];
+        names.forEach(function (n) {
+          if (seen[n]) return;
+          seen[n] = true;
+          var mate = partnerOf(n);
+          if (mate && names.indexOf(mate) !== -1) {
+            seen[mate] = true;
+            var right = /-right(-|\.)/i.test(n) ? n : mate;
+            pairs.push([right, partnerOf(right)]);
+          } else {
+            pairs.push([n, null]);
+          }
+        });
+
+        return Promise.all(pairs.map(function (pair) {
+          return Promise.all([loadSheet(pair[0]), pair[1] ? loadSheet(pair[1]) : null])
+            .then(function (sheets) {
+              if (!sheets[0]) return null;
+              return { right: sheets[0], left: sheets[1] || null };
+            });
+        }));
+      })
+      .then(function (loaded) {
+        critters = (loaded || []).filter(Boolean);
+        spritesReady = true;
+        if (!critters.length && window.console && console.warn) {
+          console.warn('[chasing cardboard] no usable sprites — check ' + SPRITE_MANIFEST + ' and the files it names.');
+        }
+      });
+  }
+
+  function sendWanderer(waited) {
     if (wandering || document.hidden) return;
     var holder = document.querySelector('.map-holder');
     if (!holder) return;
+
+    // Sheets still loading — wait rather than walk on with the wrong timing
+    if (!spritesReady && (waited || 0) < 12) {
+      setTimeout(function () { sendWanderer((waited || 0) + 1); }, 250);
+      return;
+    }
+    if (!critters || !critters.length) return;
+
     wandering = true;
+
+    var critter = critters[Math.floor(Math.random() * critters.length)];
+    var goingLeft = Math.random() < 0.5;
+    var sheet = (goingLeft && critter.left) ? critter.left : critter.right;
 
     var w = document.createElement('div');
     w.className = 'cc-wanderer';
-    if (Math.random() < 0.5) w.classList.add('is-backwards');
+    if (goingLeft) w.classList.add('is-backwards');
+    // With a dedicated left sheet there is nothing to flip
+    if (goingLeft && critter.left) w.classList.add('is-drawn-facing');
+
+    /* Everything the sheet dictates is set per-element, including steps() —
+       which can't read a custom property. */
+    w.style.setProperty('--sprite-url', 'url("' + sheet.url + '")');
+    w.style.setProperty('--sprite-frames', sheet.frames);
+    w.style.setProperty('--sprite-w', sheet.w + 'px');
+    w.style.setProperty('--sprite-h', sheet.h + 'px');
+    w.style.animationTimingFunction = 'steps(' + sheet.frames + '), linear';
+
     holder.appendChild(w);
 
     setTimeout(function () {
@@ -480,6 +598,8 @@
     /* Preview hook — works whether or not the wanderer is enabled, so you can
        check a new sprite without turning it on for everyone. */
     window.ccWander = function () { wandering = false; sendWanderer(); };
+
+    initSprites();
 
     if (!WANDERER_ENABLED) return;
 

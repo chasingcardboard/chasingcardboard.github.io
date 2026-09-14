@@ -1574,17 +1574,18 @@ a { color: var(--indigo); }
 @keyframes toast-out { to   { transform: translate(-50%, 20px); opacity: 0; } }
 
 /* --- The wanderer -------------------------------------------------------
-   Swap the artwork by replacing sprites/wanderer.png. The defaults expect
-   2 frames of 32x32 side by side (a 64x32 file). To use a different sheet,
-   change --sprite-* below AND the steps() count in the crit-walk animation.
+   Add artwork by dropping a strip in sprites/ and listing it in
+   sprites/sprites.json. map.js picks one at random and sets every variable
+   below per sheet — size and frame count both come from the file and its
+   name, so there is nothing here to change. These are only the fallbacks.
    ------------------------------------------------------------------------ */
 :root {
-  --sprite-url:    url('sprites/wanderer.png');
-  --sprite-frames: 2;
+  --sprite-url:    url('sprites/wanderer-right-6.png');
+  --sprite-frames: 6;
   --sprite-w:      32px;
   --sprite-h:      32px;
   --sprite-scale:  2;      /* drawn at 2x so the pixels stay chunky */
-  --sprite-fps:    .45s;   /* time for one full walk cycle */
+  --sprite-fps:    .72s;   /* time for one full walk cycle */
   --sprite-travel: 18s;    /* time to cross the map */
 }
 
@@ -1601,14 +1602,21 @@ a { color: var(--indigo); }
   background-size: calc(var(--sprite-w) * var(--sprite-frames) * var(--sprite-scale)) auto;
   image-rendering: pixelated;
   filter: drop-shadow(2px 2px 0 rgba(43, 48, 80, .28));
-  animation: crit-walk var(--sprite-fps) steps(2) infinite,
+  animation: crit-walk var(--sprite-fps) steps(6) infinite,
              crit-cross var(--sprite-travel) linear forwards;
 }
 
 /* Walking the other way: mirror the sprite and cross in reverse */
 .cc-wanderer.is-backwards {
-  animation: crit-walk var(--sprite-fps) steps(2) infinite,
+  animation: crit-walk var(--sprite-fps) steps(6) infinite,
              crit-cross-back var(--sprite-travel) linear forwards;
+}
+
+/* ...unless there's a left-facing sheet, in which case the art already faces
+   the right way and flipping it would undo the drawing */
+.cc-wanderer.is-backwards.is-drawn-facing {
+  animation: crit-walk var(--sprite-fps) steps(6) infinite,
+             crit-cross-back-flat var(--sprite-travel) linear forwards;
 }
 
 @keyframes crit-walk {
@@ -1621,6 +1629,10 @@ a { color: var(--indigo); }
 @keyframes crit-cross-back {
   from { transform: translateX(calc(100vw + 80px)) scaleX(-1); }
   to   { transform: translateX(-80px) scaleX(-1); }
+}
+@keyframes crit-cross-back-flat {
+  from { transform: translateX(calc(100vw + 80px)); }
+  to   { transform: translateX(-80px); }
 }
 
 @media (prefers-reduced-motion: reduce) { .cc-wanderer { display: none; } }
