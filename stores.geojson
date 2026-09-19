@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-09-12T18:51:56+00:00",
-  "count": 287,
+  "generated": "2026-09-19T15:39:39+00:00",
+  "count": 288,
   "categories": [
    {
     "slug": "independent",
-    "count": 212
+    "count": 213
    },
    {
     "slug": "chain",
@@ -3392,6 +3392,21 @@
    },
    "properties": {
     "name": "Stylecreep",
+    "category": "independent",
+    "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.985699,
+     53.406925
+    ]
+   },
+   "properties": {
+    "name": "Tcgsntreats",
     "category": "independent",
     "layer": "Independent Stores"
    }
