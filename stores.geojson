@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-10-14T19:21:19+00:00",
-  "count": 290,
+  "generated": "2026-10-14T19:21:41+00:00",
+  "count": 291,
   "categories": [
    {
     "slug": "independent",
-    "count": 215
+    "count": 216
    },
    {
     "slug": "chain",
@@ -1715,6 +1715,22 @@
     "name": "Legion Games",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.156819,
+     53.619479
+    ]
+   },
+   "properties": {
+    "name": "Lotus TCG",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "url": "https://lotustcg.co.uk/"
    }
   },
   {
