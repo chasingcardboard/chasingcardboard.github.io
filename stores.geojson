@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-10-14T19:20:31+00:00",
-  "count": 289,
+  "generated": "2026-10-14T19:21:19+00:00",
+  "count": 290,
   "categories": [
    {
     "slug": "independent",
-    "count": 214
+    "count": 215
    },
    {
     "slug": "chain",
@@ -214,6 +214,22 @@
     "name": "Atomic Cards",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.241236,
+     53.496376
+    ]
+   },
+   "properties": {
+    "name": "Azgard Collectibles",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "url": "https://www.azgardcollectibles.co.uk/"
    }
   },
   {
