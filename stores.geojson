@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-10-14T19:22:00+00:00",
-  "count": 292,
+  "generated": "2026-10-16T17:42:52+00:00",
+  "count": 293,
   "categories": [
    {
     "slug": "independent",
-    "count": 217
+    "count": 218
    },
    {
     "slug": "chain",
@@ -1010,6 +1010,22 @@
     "name": "Evolution Trading Cards",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.049945,
+     51.547291
+    ]
+   },
+   "properties": {
+    "name": "EZI TCG",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "url": "https://ezitcg.co.uk/"
    }
   },
   {
