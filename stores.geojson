@@ -3,12 +3,12 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-10-16T17:42:52+00:00",
-  "count": 293,
+  "generated": "2026-10-25T17:52:52+00:00",
+  "count": 294,
   "categories": [
    {
     "slug": "independent",
-    "count": 218
+    "count": 219
    },
    {
     "slug": "chain",
@@ -3713,6 +3713,22 @@
     "name": "The Dice Box",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.235503,
+     52.187503
+    ]
+   },
+   "properties": {
+    "name": "The Electric Mouse",
+    "category": "independent",
+    "layer": "Independent Stores",
+    "notes": "Mainly singles and imported sealed"
    }
   },
   {
