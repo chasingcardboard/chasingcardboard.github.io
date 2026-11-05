@@ -3,8 +3,8 @@
  "metadata": {
   "source": "Google My Maps",
   "mapId": "1ju0kdl9k6ywr8_twlcGeFlxBjfor9uU",
-  "generated": "2026-10-25T17:52:52+00:00",
-  "count": 294,
+  "generated": "2026-11-05T15:26:56+00:00",
+  "count": 295,
   "categories": [
    {
     "slug": "independent",
@@ -16,7 +16,7 @@
    },
    {
     "slug": "occasional",
-    "count": 11
+    "count": 12
    }
   ]
  },
@@ -995,6 +995,22 @@
     "name": "Elite 4 Collectables",
     "category": "independent",
     "layer": "Independent Stores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.102878,
+     51.6992
+    ]
+   },
+   "properties": {
+    "name": "Epping news",
+    "category": "occasional",
+    "layer": "Occasional Stockists",
+    "notes": "Sells for 50% above MSRP, fairly frequent stocks"
    }
   },
   {
